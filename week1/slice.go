@@ -115,3 +115,8 @@ func DeleteV3[T any](slice []T, i int) []T {
 	}
 	return slice
 }
+
+/* TODO:
+1. 缩容时可保留一定的capacity供未来append使用
+2. capacity 少于一定数量e.g. 64时可不用缩容
+*/
